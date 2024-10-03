@@ -1,0 +1,9 @@
+{"level":"error","message":"SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string","timestamp":"2024-10-02T07:57:07.200Z"}
+{"level":"error","message":"SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string","timestamp":"2024-10-02T07:57:40.690Z"}
+{"level":"error","message":"SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string","timestamp":"2024-10-02T07:57:40.704Z"}
+{"level":"error","message":"SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string","timestamp":"2024-10-02T07:58:03.181Z"}
+{"level":"error","message":"SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string","timestamp":"2024-10-02T07:58:03.190Z"}
+{"level":"error","message":"SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string","timestamp":"2024-10-02T08:47:04.098Z"}
+{"level":"error","message":"SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string","timestamp":"2024-10-02T08:47:04.109Z"}
+{"level":"error","message":"relation \"notes\" does not exist","timestamp":"2024-10-02T09:07:51.876Z"}
+{"level":"error","message":"relation \"notes\" does not exist","timestamp":"2024-10-02T09:10:37.782Z"}

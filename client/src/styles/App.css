@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.home-content,
+.notes-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.notes-content h2 {
+  margin-bottom: 20px;
+}
+
+/* App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Notes Page Styling */
+.notes-page {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Note List Styling */
+.note-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.note-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-item h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.note-item p {
+  margin: 0;
+  color: #777;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Form Styles */
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.note-form label {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.note-form input,
+.note-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* width: 100%; */
+}
+
+.note-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Flexbox Layout */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  /* Adds space between flex items (buttons) */
+}
+
+/* Animation */
+.note-item {
+  animation: fadeInUp 0.5s ease;
+  width: 100%;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
