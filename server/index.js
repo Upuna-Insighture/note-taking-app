@@ -39,7 +39,7 @@ app.use(cors({
 
 app.use(bodyParser.json());
 app.use('/api', noteRoutes);
-app.use('/api/auth', authRoutes);
+app.use('/auth', authRoutes);
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;

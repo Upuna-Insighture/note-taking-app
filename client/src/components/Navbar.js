@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import '../styles/Navbar.css';
 
-import { AuthContext } from "../auth/AuthProvider";
+import { AuthContext } from "../auth/context/AuthProvider";
 
 const Navbar = ({ onLogin, onLogout }) => {
     const { user } = useContext(AuthContext);

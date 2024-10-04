@@ -1,7 +1,7 @@
-import Google from "./img/google.png";
+import Google from "../assets/img/google.png";
 
 const GoogleLoginButton = () => {
-  const authServerUrl = process.env.REACT_APP_API_URL;
+  const authServerUrl = process.env.REACT_APP_AUTH_SERVER_URL;
   const google = () => {
     window.open(authServerUrl + "/auth/google", "_self");
   };

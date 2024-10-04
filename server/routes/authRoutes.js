@@ -31,11 +31,6 @@ router.get("/login/success", (req, res) => {
       user: req.user,
       cookies: req.cookies
     });
-    res.cookie('token', token, {
-      httpOnly: true,
-      secure: true,
-      sameSite: 'None'
-    });
   } else {
     res.status(401).json({
       success: false,

@@ -4,7 +4,12 @@ import { useLocation, useNavigate } from 'react-router-dom';
 const AuthContext = React.createContext();
 
 const AuthProvider = ({ children }) => {
-  const authServerUrl = process.env.REACT_APP_API_URL + "/auth/login/success";
+
+  const authServerUrl = process.env.REACT_APP_AUTH_SERVER_URL + "/auth/login/success";
+  const loginRoute = process.env.REACT_APP_AUTH_LOGIN_ROUTE;
+  const navigateSuccess = process.env.REACT_APP_AUTH_NVIGATE_SUCCESS; 
+  const navigateError = process.env.REACT_APP_AUTH_NVIGATE_ERROR; 
+
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
@@ -22,18 +27,18 @@ const AuthProvider = ({ children }) => {
       })
         .then((response) => {
           if (response.status === 200) return response.json();
-          if (location.pathname !== "/login") {
-            navigate("/");
+          if (location.pathname !== loginRoute) {
+            navigate(navigateError);
           }
         })
         .then((resObject) => {
           setUser(resObject.user);
-          navigate("/notes");
+          navigate(navigateSuccess);
         })
         .catch((err) => {
           console.log(err);
-          if (location.pathname !== "/login") {
-            navigate("/");
+          if (location.pathname !== loginRoute) {
+            navigate(navigateError);
           }
         });
     };

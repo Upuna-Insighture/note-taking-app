@@ -1,7 +1,7 @@
-import Github from "./img/github.png";
+import Github from "../assets/img/github.png";
 
 const GithubLoginButton = () => {
-  const authServerUrl = process.env.REACT_APP_API_URL;
+  const authServerUrl = process.env.REACT_APP_AUTH_SERVER_URL;
   const github = () => {
     window.open(authServerUrl + "/auth/github", "_self");
   };

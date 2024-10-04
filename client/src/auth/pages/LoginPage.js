@@ -1,6 +1,7 @@
-import FacebookLoginButton from "../auth/FacebookLoginButton.jsx";
-import GithubLoginButton from "../auth/GithubLoginButton";
-import GoogleLoginButton from "../auth/GoogleLoginButton";
+import FacebookLoginButton from "../components/FacebookLoginButton.jsx";
+import GithubLoginButton from "../components/GithubLoginButton.jsx";
+import GoogleLoginButton from "../components/GoogleLoginButton.jsx";
+import '../styles/login.css';
 
 const LoginPage = () => {
   return (
