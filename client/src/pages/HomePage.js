@@ -6,7 +6,6 @@ const HomePage = ({ user, onLogin, onLogout }) => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // onLogin();
     navigate('/login');
   };
 
